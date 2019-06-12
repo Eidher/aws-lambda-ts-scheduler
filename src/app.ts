@@ -28,5 +28,6 @@ export default async (event: any = {}): Promise<HandlerResponse> => {
     console.log(err);
     return err;
   }
+  console.log(response);
   return response;
 };

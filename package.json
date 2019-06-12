@@ -1,5 +1,5 @@
 {
-  "name": "eidher-hello-world",
+  "name": "eidher-hello-world-schedule",
   "version": "1.0.0",
   "description": "hello world sample for NodeJS",
   "main": "app.js",
@@ -50,9 +50,6 @@
       "jsx",
       "json",
       "node"
-    ],
-    "setupFilesAfterEnv": [
-      "jest-extended"
     ]
   }
 }
