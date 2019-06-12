@@ -7,14 +7,14 @@ describe('Tests index', function() {
   it('verifies successful response', async () => {
     const result = await handler();
 
-    expect(result).toBeObject();
+    expect(typeof result).toBe('object');
     expect(result.statusCode).toEqual(200);
-    expect(result.body).toBeString();
+    expect(typeof result.body).toBe('string');
 
     let response = JSON.parse(result.body);
 
-    expect(response).toBeObject();
+    expect(typeof response).toBe('object');
     expect(response.message).toEqual('hello world');
-    expect(response.location).toBeString();
+    expect(typeof response.location).toBe('string');
   });
 });
